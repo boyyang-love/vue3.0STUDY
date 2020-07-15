@@ -11,16 +11,22 @@ const routes = [
     name: 'Home',
     component: () => import ('@/views/Home.vue')
   },
-  // {
-  //   path: '/',
-  //   name: 'Home',
-  //   component: Home
-  // }
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import ('@/views/Register.vue')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import ('@/views/Login.vue')
+  }
 ];
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  linkActiveClass: "active"
 });
 
 export default router;

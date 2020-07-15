@@ -1,33 +1,18 @@
 <template>
   <div class="home">
-    <h1>this is home</h1>
-    <h2>{{mes}}</h2>
-    <div v-for="(item, i) in state" :key="i">{{item}}</div>
-    <button @click="add">add</button>
+    <Head/>
+    <Banner/>
   </div>
 </template>
 
 <script>
-import { ref, reactive } from "vue";
+import Head from '@/components/head'
+import Banner from '@/components/banner'
 export default {
   name: "Home",
-  setup() {
-    let mes = ref(100);
-    const state = reactive({
-      name: "boyyang",
-      sex: "boy"
-    });
-
-    const add = () => {
-      mes.value++;
-      state.name = 'i love you'
-    };
-
-    return {
-      mes,
-      state,
-      add
-    };
+  components: {
+    Head,
+    Banner
   }
 
 };
