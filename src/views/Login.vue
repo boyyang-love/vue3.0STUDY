@@ -1,16 +1,19 @@
 <template>
   <div class="login">
     <Header :mes="state" class="animated bounceInLeft" id="dowebok" />
+    <Login />
   </div>
 </template>
 
 <script>
 import Header from "@/components/head/header.vue";
+import Login from "@/components/login"
 import { reactive } from "vue";
 export default {
   name: "Login",
   components: {
-    Header
+    Header,
+    Login
   },
   setup() {
     const state = reactive({

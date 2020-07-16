@@ -2,7 +2,7 @@
   <div class="header">
     <div class="head">
       <div class="back">
-        <p class="iconfont icon-ai214" @click="$router.back(1)"></p>
+        <p class="iconfont icon-ai214" @click="$router.push('/')"></p>
       </div>
       <p>{{props.mes.name}}</p>
       <p>
