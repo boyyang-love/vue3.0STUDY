@@ -1,10 +1,10 @@
 <template>
   <div class="head">
     <div class="log">
-      <p>boyyang</p>
+      <p @click="routeTo('/')">boyyang</p>
     </div>
     <div class="login">
-      <p>Help</p>
+      <p @click="routeTo('music')">Music</p>
       <p>About</p>
       <p @click="$router.push('register')">Sign up</p>
       <p @click="routeTo('login')">Log in</p>
@@ -17,7 +17,7 @@
       <ul>
         <li @click="routeTo('register')">Sign up</li>
         <li @click="routeTo('login')">Log in</li>
-        <li>Help</li>
+        <li @click="routeTo('music')">Music</li>
         <li>About</li>
       </ul>
     </div>
@@ -79,6 +79,7 @@ const routerJump = () => {
   color: brown;
 }
 .head {
+  z-index: 10;
   width: 100%;
   height: 80px;
   display: flex;
@@ -126,12 +127,8 @@ const routerJump = () => {
     top: 0px;
     right: 0;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-    background: #373b44; 
-    background: linear-gradient(
-      to right,
-      rgb(55, 59, 68),
-      rgb(66, 134, 244)
-    ); 
+    background: #373b44;
+    background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244));
     .iconfont {
       cursor: pointer;
       font-size: 30px;
