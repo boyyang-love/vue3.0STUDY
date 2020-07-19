@@ -1,7 +1,9 @@
 import Vuex from "vuex";
 
 export default Vuex.createStore({
-  state: {},
+  state: {
+    musicUrl: ''
+  },
   mutations: {},
   actions: {},
   modules: {}

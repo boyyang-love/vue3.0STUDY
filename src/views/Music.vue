@@ -97,6 +97,8 @@ const getListData = async state => {
         margin: 10px 0px;
       }
       img {
+        border-radius: 15px;
+        box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.8);
         width: 100%;
       }
     }
@@ -127,11 +129,11 @@ const getListData = async state => {
           margin: 0 auto;
         }
         .name {
-          // text-align: center;
           padding: 2px;
           font-size: 12px;
         }
         img {
+          border-radius: 10px;
           width: 100%;
         }
       }
